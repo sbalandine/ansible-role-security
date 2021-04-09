@@ -1,0 +1,10 @@
+---
+- name: SECURITY | PACKAGES (CENTOS) | Ensure deltarpm installed (before updating CentOS packages)
+  dnf: 
+    name: drpm
+    state: latest
+
+- name: SECURITY | PACKAGES (CENTOS) | Ensure basic packages installed
+  dnf: 
+    name: ['{{ base_packages }}']
+    state: latest

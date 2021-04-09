@@ -1,4 +1,6 @@
 ---
+base_packages: 'git, gnupg, htop, logrotate, mlocate, nano, ncdu, nmap, openssl, openssl-devel, rsyslog, sudo, unzip, which'
+
 security_ssh_port: 22
 security_ssh_password_authentication: "yes"
 security_ssh_permit_root_login: "yes"

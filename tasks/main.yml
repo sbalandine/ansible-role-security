@@ -1,4 +1,7 @@
 ---
+- include: centos_packages.yml
+  when: ansible_distribution == 'CentOS'
+
 - name: Include OS-specific variables.
   include_vars: "{{ ansible_os_family | lower }}.yml"
 
